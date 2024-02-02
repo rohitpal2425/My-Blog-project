@@ -1,0 +1,28 @@
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#ceo-heading {
+    animation: moveRight 10s linear infinite; /* Add 'infinite' to make the animation continuous */
+    color: rgb(5, 5, 5);
+    text-align: center;
+    /* background-color: chocolate; */
+}
+#advisor-heading {
+    animation: moveRight 10s linear infinite;
+    color: rgb(12, 12, 12);
+    text-align: center;
+    /* background-color: chocolate; */
+}
+#backbone-heading {
+    animation: moveRight 10s linear infinite;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    
+    /* background-color: chocolate;/ */
+}

@@ -7,25 +7,7 @@
     <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <style>
-        /* Adjust height of carousel images to 60% of screen height */
-        .carousel-item img {
-            height: 60vh;
-            /* 60% of viewport height */
-            object-fit: cover;
-            /* Ensure the image covers the entire space */
-            /* filter: blur(2px); Apply a blur effect */
-
-        }
-
-        #success {
-            opacity: 0.9;
-        }
-
-        #p1 {
-            background-color: brown;
-        }
-    </style> -->
+        <link rel="stylesheet" href="about.css">    
 </head>
 
 <body>
@@ -40,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -74,8 +56,8 @@
     </nav>
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1 font-weight-bold">CEO</h2>
-
+            <h2 id="ceo-heading" class="featurette-heading fw-normal lh-1 font-weight-bold " ><b>CEO</b></h2>
+        
             <p class="lead">Rohit Pal, hailing from Dadeldhura and currently residing in Mahendranagar, Nepal, is a
                 multifaceted individual with a rich blend of experiences and interests. As the Farwest Project Lead at
                 Code for Change, Rohit spearheads initiatives aimed at leveraging technology for social impact. His
@@ -90,8 +72,9 @@
                 ever-evolving tech landscape. Through his endeavors, Rohit remains committed to making meaningful
                 contributions to both his local community and the broader realm of technology and education.</p>
         </div>
+        
         <div class="col-md-5 position-relative">
-            <img src="my2.jpeg" style="margin-top: 60px;"
+            <img src="my2.jpeg" style="margin-top: 5px;" 
                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="450"
                 height="550" alt="">
             <div class="position-absolute bottom-10 start-50 translate-middle-x">
@@ -110,7 +93,7 @@
 
     <div class="row featurette" style="margin-bottom: 70px;">
         <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1 font-weight-bold">Our Advisor</h2>
+            <h2 id="advisor-heading" class="featurette-heading fw-normal lh-1 font-weight-bold"><b>Our Advisor</b></h2>
             <p class="lead">Asmita Ojha, a resident of Mahendranagar, Nepal, embodies the spirit of leadership and
                 innovation in the tech industry. Currently serving as the Regional Ambassador of Province 7 at Girl's In
                 Tech Nepal, she advocates for gender diversity and inclusion within the technology sector. As Secretary
@@ -124,6 +107,7 @@
                 and engagements, Asmita remains committed to driving positive change and advancing both the tech
                 industry and her community.</p>
         </div>
+        
         <div class="col-md-5 position-relative ">
             <img src="advisor.jpeg" style="margin-top: 10px;"
                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="450"
@@ -143,9 +127,10 @@
     </div>
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1 font-weight-bold">Back Bone</h2>
+            <h2 id="backbone-heading" class="featurette-heading fw-normal lh-1 font-weight-bold"><b>Backbone</b></h2>
             <p class="lead">Friends serve as the backbone of life, providing essential support, understanding, and shared experiences. They offer a sense of belonging, comfort in challenging times, and joy in moments of celebration. Like a sturdy backbone, friends offer stability and strength, helping us navigate life's ups and downs. They contribute to our growth, offering different perspectives and enriching our journey with laughter and shared memories. Through the ebb and flow of life, friends stand as pillars of unwavering support, forming a crucial foundation that enhances our well-being and enriches the tapestry of our existence.</p>
         </div>
+        
         <div class="col-md-5">
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
                 <div class="carousel-indicators">
@@ -201,7 +186,7 @@
             </div>
         </div>
     </div>
-    <footer class="py-3 my-4 ">
+    <footer class="py-3 my-4 active  ">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
