@@ -25,6 +25,10 @@
         #p1 {
             background-color: brown;
         }
+        .custom-search-width {
+        width: 950px; /* Adjust the width as per your requirement */
+        }
+
     </style>
 </head>
 
@@ -45,6 +49,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about.html">About</a>
                     </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -61,12 +69,9 @@
                             <li><a class="dropdown-item" href="#">Write For Us</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact Us</a>
-                    </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="custom-search-width" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
