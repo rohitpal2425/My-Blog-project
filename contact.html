@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">iCoder</a>
+            <a class="navbar-brand" href="#">MyBlog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -38,14 +38,16 @@
                             Courses
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">UX/UI Design </a></li>
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
-                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                             <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=U_IhV8VPoII&list=PLvnhVb8yYRQ2xVTeOUSrqBn9ulTl42Uz3">UX/UI Design </a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/">Web Development</a></li>
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Support</a></li>
-                            <li><a class="dropdown-item" href="#">Write For Us</a></li>
+                            <li><a class="dropdown-item" href="#">Write For Us</a>
+                                
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -55,8 +57,8 @@
                     <button class="btn btn-outline-light type=" submit">Search</button>
                 </form>
                 <div class="mx-2">
-                    <button class="btn btn-danger" data-bs-dismiss="modal" data-target="#logInModal" >logIn</button>
-                    <button class="btn btn-danger" data-bs-dismiss="modal" data-target="#SignUpModal">SignUp</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
                 </div>
             </div>
         </div>
@@ -67,37 +69,80 @@
     </button> -->
 
     <!-- Log in Modal -->
-    <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="logInModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-target="#logInModal"></button>
+                    <h1 class="modal-title fs-5" id="examplModalLabel">Log in to Blog</h1>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form >
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4"
+                                placeholder="Enter your password">
+                        </div>
+                        <div class="col-12" style="margin: 5px;">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
                 </div>
             </div>
         </div>
     </div>
-     <!-- Sign Up Modal -->
-     <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <!--   -->
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="SignUpModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-target="#logInModal"></button>
+                    <h1 class="modal-title fs-5" id="examplModalLabel">Create account</h1>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form action="">
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4"
+                                placeholder="Enter your password">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cPassword4" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputPassword4"
+                                placeholder="Re-enter your password">
+                        </div>
+                        <div class="col-12" style="margin: 5px;">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    
                 </div>
             </div>
         </div>
@@ -106,11 +151,17 @@
     <form class="row g-3" style="margin-left:20px ;">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com" required>
+            <div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password">
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password" minlength="5" required>
+            <div class="invalid-feedback">
+                Password must be at least 5 characters long.
+            </div>
         </div>
         <div class="col-12">
             <label for="inputAddress" class="form-label">Address</label>
@@ -144,6 +195,10 @@
                 <option>Python</option>
                 <option>C#</option>
             </select>
+        </div>
+        <div class="col-12">
+            <label for="additionalComments" class="form-label">Write About Yourself</label>
+            <textarea class="form-control" id="additionalComments" rows="3" placeholder="Enter any additional comments here"></textarea>
         </div>
         <div class="col-12">
             <div class="form-check">
